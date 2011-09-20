@@ -96,7 +96,7 @@ Rails.application.config.sorcery.configure do |config|
                                                                                       # activation code expires. nil for
                                                                                       # never expires.
                                                                                       
-    # user.user_activation_mailer = nil                                               # your mailer class. Required.
+    user.user_activation_mailer = SorceryMailer                                               # your mailer class. Required.
     
     # user.activation_needed_email_method_name = :activation_needed_email             # activation needed email method
                                                                                       # on your mailer class.
@@ -119,7 +119,7 @@ Rails.application.config.sorcery.configure do |config|
                                                                                                 # used for hammering
                                                                                                 # protection.
                                                                                                 
-    # user.reset_password_mailer = nil                                                          # mailer class. Needed.
+    user.reset_password_mailer = SorceryMailer                                                          # mailer class. Needed.
     
     # user.reset_password_email_method_name = :reset_password_email                             # reset password email
                                                                                                 # method on your mailer
